@@ -7,18 +7,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloController {
-	@RequestMapping("/hello")
-	public String hello(
-			Model model,
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
-		model.addAttribute("name", name);
-		return "hello";
-	}
-
+    @RequestMapping("/hello")
+    public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
+        model.addAttribute("name", name);
+        return "hello";
+    }
 	@RequestMapping("/")
-	public String home(
-			Model model,
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
-		return "hcmute";
+    public String newPage(Model model) {
+        return "hcmute";
 	}
 }
