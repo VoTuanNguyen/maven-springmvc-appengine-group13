@@ -1,6 +1,4 @@
-﻿/* Common CSS */
-
-.RadMenu
+﻿.RadMenu
 {
 	white-space:nowrap;
 	float:left;
