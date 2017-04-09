@@ -81,12 +81,12 @@
     </script>
 
 
-<link href="./js/WebResource.axd.js" type="text/css" rel="stylesheet"
+<link href="./css/WebResource.axd.css" type="text/css" rel="stylesheet"
 	class="Telerik_stylesheet">
-<link href="./js/WebResource.axd(1).js" type="text/css" rel="stylesheet"
-	class="Telerik_stylesheet">
-<link href="./js/WebResource.axd(2).js" type="text/css" rel="stylesheet"
-	class="Telerik_stylesheet">
+<link href="./css/WebResource.axd(1).css" type="text/css"
+	rel="stylesheet" class="Telerik_stylesheet">
+<link href="./css/WebResource.axd(2).css" type="text/css"
+	rel="stylesheet" class="Telerik_stylesheet">
 </head>
 <body class="body" onload="popunder();">
 
@@ -256,7 +256,7 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 												<div class="P_top">
 													<div class="P_logo">
 														<div class="anh_logo">
-															<img alt="" src="./img/Banner Hoi nghi quoc te sua.jpg"
+															<img alt="" src="img/Banner Hoi nghi quoc te sua.jpg"
 																style="width: 800px; height: 188px;"><br>
 														</div>
 														<div class="name_ute"></div>
@@ -270,10 +270,12 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 											<div>
 												<div class="search_phong">
 													<input class="bgsearch_phong" id="txtSearchArticle"
-														onkeydown="return SearchProcess(event);" type="text"><input
+														onkeydown="return SearchProcess(event);" type="text"
+														style="background: url('img/bgsearch_phong.png') no-repeat"><input
 														class="btsearch_phong"
 														onclick="OnSearch(document.getElementById(&#39;txtSearchArticle&#39;).value);"
-														type="button">
+														type="button"
+														style="background: url('img/bt_search.png') no-repeat">
 												</div>
 												<div class="link_trang">
 													<a href="http://icsse2017.hcmute.edu.vn/">http://icsse2017.hcmute.edu.vn</a>
@@ -299,20 +301,20 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 
 															<a href="http://icsse2017.hcmute.edu.vn/" target="_blank"
 																class="nivo-imageLink" style="display: none;"> <img
-																src="./img/HNQT3.jpg" title=""
+																src="img/HNQT3.jpg" title=""
 																style="height: 350px; width: 1000px; visibility: hidden; display: inline;"></a>
 
 															<a href="http://icsse2017.hcmute.edu.vn/" target="_blank"
 																class="nivo-imageLink" style="display: none;"> <img
-																src="./img/HNQT2.jpg" title=""
+																src="img/HNQT2.jpg" title=""
 																style="height: 350px; width: 1000px; visibility: hidden; display: inline;"></a>
 
 															<a href="http://icsse2017.hcmute.edu.vn/" target="_blank"
 																class="nivo-imageLink" style="display: block;"> <img
-																src="./img/HNQT1.jpg" title=""
+																src="img/HNQT1.jpg" title=""
 																style="height: 350px; width: 1000px; visibility: hidden; display: inline;"></a>
 
-															<img class="nivo-main-image" src="./img/HNQT1.jpg"
+															<img class="nivo-main-image" src="img/HNQT1.jpg"
 																style="display: inline; height: auto; width: 1000px;">
 															<div class="nivo-caption"></div>
 															<div class="nivo-directionNav">
@@ -375,7 +377,7 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 															href="http://icsse2017.hcmute.edu.vn/Portlets/MenuRad/#"
 															class="rmLink rmRootLink"><span
 																class="rmText rmExpandDown">About</span></a>
-														<div class="rmSlide">
+															<div class="rmSlide">
 																<ul class="rmVertical rmGroup rmLevel1">
 																	<li class="rmItem rmFirst"><a
 																		href="http://icsse2017.hcmute.edu.vn/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4"
@@ -536,11 +538,12 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 												<style type="text/css">
 </style>
 												<div class="thongbao_phong">
-													<div class="topictb_phong_blue">
+													<div class="topictb_phong_blue"
+														style="background: url('img/bgtopic_phong_blue.png') no-repeat">
 														<h3>Latest news</h3>
 														<a class="wobble-horizontal"
 															href="http://icsse2017.hcmute.edu.vn/?TopicId=31ca0f13-71be-4bd9-ad28-d3589a3cf6d2">
-															<img src="./img/arrow_all_phong.png">
+															<img src="img/arrow_all_phong.png">
 														</a>
 													</div>
 													<div class="listtb_phong">
@@ -667,8 +670,8 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 													</tbody>
 												</table>
 												<span
-													style="font-size: 10.5pt; letter-spacing: 0.85pt; font-family: &amp; quot;times new roman&amp;quot;, serif;"><strong
-													style="font-weight: bold; color: #002060; font-family: &amp; quot; times new roman&amp;quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br>
+													style="font-size: 10.5pt; letter-spacing: 0.85pt; font-family: &amp; amp;"><strong
+													style="font-weight: bold; color: #002060; font-family: &amp; amp; amp; quot; times new roman&amp;amp; amp; quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br>
 															<a
 															href="https://easychair.org/conferences/?conf=icsse2017specialsess"
 															target="_blank">SPECIAL SESSION SUBMISSION LINK</a>&nbsp;</strong></strong><br>
@@ -698,7 +701,7 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 															style="margin: 0px; padding: 0px; font-size: 20px;"><strong
 																style="margin: 0px; padding: 0px;"><span
 																	style="margin: 0px; padding: 0px; font-size: 14px; background-color: #ffff00; color: #002060;"><strong
-																		style="font-family: &amp; quot; times new roman&amp;quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
+																		style="font-family: &amp; amp; amp; quot; times new roman&amp;amp; amp; quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
 																			style="color: #002060;"><strong
 																				style="letter-spacing: 1.13333px;"><strong>SPECIAL
 																						SESSION&nbsp;</strong></strong></span></strong>02<br> FUZZY SYSTEMS &amp; ITS
@@ -751,7 +754,7 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 						<tr>
 							<td colspan="2"><div id="pnBottom">
 									<div id="pnBottomDisplay"
-										style="clear: both; background: url(/Resources/ImagesPortal/PhongBan/bgfooter_phong.png) repeat-x; width: 1000px; height: 110px;">
+										style="clear: both; background: url(img/bgfooter_phong.png) repeat-x; width: 1000px; height: 110px;">
 										<div id="ctl06_portlet_5c231c9e-b9b3-474f-bb01-834b95465666"
 											style="float: right">
 											<div>
@@ -809,33 +812,5 @@ Sys.Application.add_init(function() {
 //]]>
 </script>
 	</form>
-
-
-	<div id="lightboxOverlay" class="lightboxOverlay"
-		style="display: none;"></div>
-	<div id="lightbox" class="lightbox" style="display: none;">
-		<div class="lb-outerContainer">
-			<div class="lb-container">
-				<img class="lb-image" src="http://icsse2017.hcmute.edu.vn/">
-				<div class="lb-nav">
-					<a class="lb-prev" href="http://icsse2017.hcmute.edu.vn/"></a><a
-						class="lb-next" href="http://icsse2017.hcmute.edu.vn/"></a>
-				</div>
-				<div class="lb-loader">
-					<a class="lb-cancel"></a>
-				</div>
-			</div>
-		</div>
-		<div class="lb-dataContainer">
-			<div class="lb-data">
-				<div class="lb-details">
-					<span class="lb-caption"></span><span class="lb-number"></span>
-				</div>
-				<div class="lb-closeContainer">
-					<a class="lb-close"></a>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 </html>

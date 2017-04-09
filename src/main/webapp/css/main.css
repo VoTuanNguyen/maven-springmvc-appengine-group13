@@ -47,7 +47,7 @@ img {
 }
 
 .bgsearch_phong {
-    background: url(/Resources/ImagesPortal/PhongBan/bgsearch_phong.png) no-repeat;
+    background: url(../img/bgsearch_phong.png) no-repeat;
     width: 161px;
     height: 27px;
     border: 0px;
@@ -57,7 +57,7 @@ img {
 }
 
 .btsearch_phong {
-    background: url(/Resources/ImagesPortal/PhongBan/bt_search.png) no-repeat;
+    background: url(../img/bt_search.png) no-repeat;
     width: 28px;
     height: 27px;
     border: 0px;
@@ -120,7 +120,7 @@ img {
 .menu_phong {
     clear: both;
     float: left;
-    background: url(/Resources/ImagesPortal/PhongBan/bg_mn_phong.jpg) repeat-x;
+    background: url(../img/bg_mn_phong.jpg) repeat-x;
     width: 1000px;
     height: 48px;
 }
@@ -248,7 +248,6 @@ img {
 
 .topictb_phong {
     float: right;
-    background: url(/Resources/ImagesPortal/PhongBan/bgtopic_phong.png) no-repeat;
     width: 301px;
     height: 56px;
     margin-top: 10px;
@@ -274,7 +273,7 @@ img {
 
 .topictb_phong_blue {
     float: right;
-    background: url(/Resources/ImagesPortal/PhongBan/bgtopic_phong_blue.png) no-repeat;
+    /*background: url(Menu/bgtopic_phong_blue.png) no-repeat;*/
     width: 301px;
     height: 56px;
     margin-top: 10px;
