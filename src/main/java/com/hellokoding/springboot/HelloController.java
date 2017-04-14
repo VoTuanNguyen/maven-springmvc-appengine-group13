@@ -16,4 +16,8 @@ public class HelloController {
     public String hcmute(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
         return "hcmute";
     }
+    @RequestMapping("/ckeditor")
+    public String ckeditor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
+        return "Edit";
+    }
 }
