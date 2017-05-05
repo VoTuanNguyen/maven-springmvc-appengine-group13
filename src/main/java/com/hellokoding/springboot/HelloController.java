@@ -18,6 +18,12 @@ public class HelloController {
     }
     @RequestMapping("/ckeditor")
     public String ckeditor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
-        return "Edit";
+    	model.addAttribute("id1", "14110133");
+    	model.addAttribute("ten1", "Võ Tuấn Nguyên");
+    	model.addAttribute("id2", "14110151");
+    	model.addAttribute("ten2", "Đỗ Công Phúc");
+    	model.addAttribute("id3", "14110050");
+    	model.addAttribute("ten3", "Võ Ngọc Hạnh");
+    	return "Edit";
     }
 }
