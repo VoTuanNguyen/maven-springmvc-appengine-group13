@@ -8,7 +8,7 @@
 		<form action="" method="post">
 			<!-- (2): textarea sẽ được thay thế bởi CKEditor -->
 			<textarea id="editor1" name="editor1" cols="80" rows="10">
-			<%
+			<%-- <%
 			ResultSet rs = null;
 	    	WebApplication DB = new WebApplication();
 			String strSQL = "select * from edit";
@@ -22,7 +22,7 @@
 			} catch (Exception e) {
 				throw new Exception(e.getMessage() + " Error at : " + strSQL);
 			}
-			%> 
+			%>  --%>
 			<p>${id1} - <strong>${ten1}</strong></p>
 			<p>${id2} - <strong>${ten2}</strong></p>
 			<p>${id3} - <strong>${ten3}</strong></p>
