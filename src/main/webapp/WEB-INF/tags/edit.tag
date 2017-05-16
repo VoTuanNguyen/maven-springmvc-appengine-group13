@@ -12,10 +12,11 @@
 			<!-- (3): Code Javascript thay thế textarea có id='editor1' bởi CKEditor -->
 			<script>
 				CKEDITOR.replace('editor1');
-				var editor = CKEDITOR.instances['editor1']
+				var editor = CKEDITOR.instances['editor1'];
 				editor.setData('${noidung}');
 				function myFunction(){
-					var noidung = editor.document.getBody().getText();
+					var editor1 = CKEDITOR.instances['editor1'];
+					var noidung = editor1.document.getBody().getText();
 					$.ajax({
 		        	    type : "POST",
 		        	    url : "/save",
