@@ -4,6 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import Connect.ConnectDB;
 
 @Controller
 public class HelloController {
@@ -17,13 +20,23 @@ public class HelloController {
         return "hcmute";
     }
     @RequestMapping("/ckeditor")
-    public String ckeditor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
-    	model.addAttribute("id1", "14110133");
-    	model.addAttribute("ten1", "Võ Tuấn Nguyên");
-    	model.addAttribute("id2", "14110151");
-    	model.addAttribute("ten2", "Đỗ Công Phúc");
-    	model.addAttribute("id3", "14110050");
-    	model.addAttribute("ten3", "Võ Ngọc Hạnh");
+    public String ckeditor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) throws Exception {
+    	ConnectDB DB = new ConnectDB();
+    	String noidung = DB.GetContent();
+    	model.addAttribute("noidung", noidung);
     	return "Edit";
+    }
+    @RequestMapping(value ="/save")
+    @ResponseBody 
+    public String Save(Model model,@RequestParam("noidung") String noidung) {
+    	try{
+	    	ConnectDB set = new ConnectDB();
+	    	set.UpdateContent(noidung);
+	    	return "Lưu thành công!!!";
+    	}
+    	catch (Exception e) {
+    		return "Lưu thất bại!!!";
+		}
+        
     }
 }
