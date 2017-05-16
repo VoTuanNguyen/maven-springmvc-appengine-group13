@@ -1,10 +1,32 @@
 <%@tag description="Tag Header Footer" pageEncoding="UTF-8"%>
 <html>
 <body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WELCOME TO ICSSE 2017</title>
+<link href="./css/show_img.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+
+<script src="./js/Common.js" type="text/javascript"></script>
+<script src="./js/PagingContent.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/png"
+	href="http://icsse2017.hcmute.edu.vn/Resources/Imagephoto/logo.png">
+<link href="./css/lightbox.css" rel="stylesheet" type="text/css">
+<script src="./js/lightbox.min.js" type="text/javascript"></script>
+<link href="./css/search_Article.css" rel="stylesheet">
+
+<script src="ckeditor/ckeditor.js"></script>
+
+<link href="./css/WebResource.axd.css" type="text/css" rel="stylesheet"
+	class="Telerik_stylesheet">
+<link href="./css/WebResource(1).axd.css" type="text/css" rel="stylesheet"
+	class="Telerik_stylesheet">
+<link href="./css/WebResource(2).axd.css" type="text/css" rel="stylesheet"
+	class="Telerik_stylesheet">
+<script src="./js/WebResource(3).axd.js" type="text/javascript"></script>
 </head>
 <body class="body" onload="popunder();">
-	<form name="form1" method="post"
-		action="http://icsse2017.hcmute.edu.vn/" id="form1">
+	<form name="form1" method="post" id="form1">
 		<div>
 			<input type="hidden" name="RadScriptManager1_TSM"
 				id="RadScriptManager1_TSM"
@@ -20,13 +42,13 @@
 			if (!theForm) {
 			    theForm = document.form1;
 			}
-			function __doPostBack(eventTarget, eventArgument) {
+			/* function __doPostBack(eventTarget, eventArgument) {
 			    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
 			        theForm.__EVENTTARGET.value = eventTarget;
 			        theForm.__EVENTARGUMENT.value = eventArgument;
 			        theForm.submit();
 			    }
-			}
+			} */
 		</script>
 		<script src="./js/WebResource.axd(3).js" type="text/javascript"></script>
 		<script src="./js/Telerik.Web.UI.WebResource.axd.js"
@@ -211,9 +233,6 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 
 												<script src="js/jquery.nivo.slider.js.táº£i xuá»ng"></script>
 
-
-
-
 												<div class="container" style="height: 350px;">
 													<div class="slider-wrapper theme-default">
 														<div id="slider" class="nivoSlider" style="height: 350px;">
@@ -358,9 +377,11 @@ Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', [], []
 									</div>
 								</div></td>
 						</tr>
+
 						<div id="body">
 							<jsp:doBody />
 						</div>
+
 						<tr>
 							<td colspan="2"><div id="pnBottom">
 									<div id="pnBottomDisplay"
