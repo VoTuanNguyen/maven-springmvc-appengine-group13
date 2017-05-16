@@ -29,7 +29,7 @@
 				}
 			</script>
 			
-			<input type="submit" style="height: 50px; width: 100px;" onclick="myFunction()"  value="Submit">
+			<button style="height: 50px; width: 100px;" onclick="myFunction()">Submit</button>
 		</form>
 	<td>
 </body>
