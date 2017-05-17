@@ -27,8 +27,7 @@
 		        	        noidung:noidung
 		        	    },
 		        	    success : function(response){
-		        	    	window.alert(response);
-		        	    	window.location.href("ckeditor")
+		        	    	window.location.href = response; 
 		        	    }
 					});
 				}

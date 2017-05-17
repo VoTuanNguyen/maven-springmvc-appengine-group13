@@ -10,13 +10,6 @@ import Connect.ConnectDB;
 
 @Controller
 public class HelloController {
-	@RequestMapping("/hello")
-	public String hello(
-			Model model,
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
-		model.addAttribute("name", name);
-		return "hello";
-	}
 
 	@RequestMapping("/")
 	public String hcmute(
@@ -35,16 +28,30 @@ public class HelloController {
 		model.addAttribute("noidung", noidung);
 		return "Edit";
 	}
+	@RequestMapping("/success")
+	public String success(
+			Model model,
+			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+		return "success";
+	}
+	@RequestMapping("/fail")
+	public String fail(
+			Model model,
+			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+		return "fail";
+	}
 	@RequestMapping(value ="/save")
     @ResponseBody 
     public String uploadck(Model model,@RequestParam("noidung") String noidung) {
     	try{
 	    	ConnectDB set = new ConnectDB();
-	    	set.UpdateContent(noidung);
-	    	return "Lưu thành công!!!";
+	    	if(set.UpdateContent(noidung))
+	    		return "success";
+	    	else
+	    		return "fail";
     	}
     	catch (Exception e) {
-    		return "Lưu thất bại!!!";
+    		return "fail";
 		}
         
     }
