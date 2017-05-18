@@ -25,7 +25,7 @@ public class ConnectDB {
 			hasDriver();
 			String url = String.format(
 			        "jdbc:mysql://google/%s?cloudSqlInstance=%s&"
-				            + "socketFactory=com.google.cloud.sql.mysql.SocketFactory", "dtdmnhom13","sql-glcoud-group13:asia-northeast1:dtdmgroup13");
+				            + "socketFactory=com.google.cloud.sql.mysql.SocketFactory", "dtdmgroup13","sql-glcoud-group13:asia-northeast1:dtdmgroup13");
 			// url_sql = "....";
 			//String url = "jdbc:mysql://localhost/ckeditor?useUnicode=true&characterEncoding=utf-8";
 			try {
